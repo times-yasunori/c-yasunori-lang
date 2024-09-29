@@ -18,7 +18,7 @@ by takeokunn at vim-jp Slack
 
 # Example
 
-Get some brainf*ck code and convert it to yasunori-lang code.
+Get some brainf*ck code.
 
 
 ```
