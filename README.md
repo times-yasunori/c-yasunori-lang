@@ -1,5 +1,6 @@
 # c-yasunori-lang
 
+
 # Spec
 
 ```
@@ -13,3 +14,33 @@
 8. `i` ポインタが指す値が0でないなら、対応する `r` （の直後）にジャンプする。C言語の「}」に相当。
 ```
 by takeokunn at vim-jp Slack
+
+
+# Example
+
+Get some brainf*ck code and convert it to yasunori-lang code.
+
+
+```
+$ cat > sample/helloworld.bf
+++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+```
+
+`yasunorize` it.
+
+```
+cat sample/helloworld.bf | ./yasunorize > sample/helloworld.ys
+```
+
+Compile.
+
+```
+make yasunori
+```
+
+Run.
+
+```
+$ ./yasunori sample/helloworld.ys
+Hello World!
+```
