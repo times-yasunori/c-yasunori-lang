@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail -o posix
+
+# >: y
+# <: a
+# +: s
+# -: u
+# .: n
+# ,: o
+# [: r
+# ]: i
+
+sed 's/>/y/g' |
+sed 's/</a/g' |
+sed 's/+/s/g' |
+sed 's/-/u/g' |
+sed 's/\./n/g' |
+sed 's/,/o/g' |
+sed 's/\[/r/g' |
+sed 's/\]/i/g'
