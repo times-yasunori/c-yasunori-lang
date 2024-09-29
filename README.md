@@ -44,3 +44,10 @@ Run.
 $ ./yasunori sample/helloworld.ys
 Hello World!
 ```
+
+
+# Nix
+
+- `nix fmt`: format files
+- `nix build`: build; `result/bin/yasunori` and `yasunorize` is the executable
+- `nix shell`: enter shell
