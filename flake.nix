@@ -57,8 +57,8 @@
 
           devShells.default = pkgs.mkShell {
             packages = with pkgs; [
-	      gcc
-	      make
+              gcc
+              make
 
               nil
             ];
